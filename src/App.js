@@ -5,7 +5,7 @@ import Banner from './Components/Banner/Banner'
 import RowPost from './Components/RowPost/RowPost'
 import Footer from './Components/Footer/Footer'
 
-import { originals,trending,ComedyMovies,HorrorMovies,ActionMovies,Documentaries,RomanceMovies } from './url'
+import { originals,trending,ComedyMovies,HorrorMovies,ActionMovies,Documentaries } from './url'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <RowPost title='Horror Movies' isSmall={true} url={HorrorMovies}/>
 
         <RowPost title='Action Movies' isSmall={true} url={ActionMovies}/>
-        <RowPost title=' Romance Movies' isSmall={true} url={RomanceMovies}/>
+        
         <RowPost title='Documentaries' isSmall={true} url={Documentaries}/>
         <Footer />
     </div>

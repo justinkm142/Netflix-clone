@@ -26,7 +26,7 @@ function RowPost(props) {
         axios.get(`/movie/${id}/videos?api_key=${API_KEY}&language=en-US`).then(response=>{
             console.log(response.data.results);
             if(response.data.results.length!==0){
-                setUrlId(response.data.results[0])
+                setUrlId(response.data.results[1])
             } else {
                 alert("no video available")
             }
